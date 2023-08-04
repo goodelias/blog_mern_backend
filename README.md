@@ -64,12 +64,10 @@ Open the server part of the project and set your own environmental variables in 
 
 - SECRET_KEY: you can provide any string here, it is used to encrypt the JWT authentication token.
 
-- PORT: provide any port you want this application to run on
-
 After you've set these environmental variables in the .env file at the root of the server folder, run "node index.js" to run the server.
 
 **Frontend**
 
-Open frontend part and run in the console "npm init" to set up an existing npm package. Then run "npm start" to start the client.
+Open frontend part and run in the console "npm install" to set up an existing npm package. Then run "npm start" to start the client.
 
 And now the application should start.
