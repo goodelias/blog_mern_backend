@@ -15,7 +15,7 @@
 
   mongoose
     .connect(
-      `mongodb+srv://goodelias:${process.env.MONGO_URI}@cluster0.qsjswev.mongodb.net/blog?retryWrites=true&w=majority`
+      `${process.env.MONGO_URI}`
     )
     .then(() => console.log("DB ok"))
     .catch((err) => console.log("DB error", err));
@@ -77,7 +77,7 @@
     PostController.update
   );
 
-  app.listen(process.env.PORT, (err) => {
+  app.listen(4444, (err) => {
     if (err) {
       return console.log(err);
     }
